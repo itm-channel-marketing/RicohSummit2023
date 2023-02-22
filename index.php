@@ -1,10 +1,17 @@
 <?php
 session_start();
 
+if ($_SERVER['HTTPS'] == 'true') {
+  $url = "https://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+  header('Location: ' . $url);
+  exit;
+}
+
 if(!isset($_SESSION['emailValidado']) || $_SESSION['emailValidado'] == false){
 	header('Location: login.php');
 	exit;
 }
+
 
 ?>
 <!DOCTYPE html>
