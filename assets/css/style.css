@@ -1,0 +1,108 @@
+@font-face{
+  font-family: 'Frutiger-normal';
+  src: url(../../assets/fonts/FrutigerLT57Condensed.ttf);
+} 
+@font-face{
+  font-family: 'Frutiger-bold';
+  src: url(../../assets/fonts/FrutigerLT65Bold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Frutiger-normal', Arial, Helvetica, sans-serif;
+  color: #717171;
+  font-size: 1.5vw;
+}
+h1 {
+  font-family: 'Frutiger-bold', Arial, Helvetica, sans-serif;
+}
+.bg-banner {
+  background-image: url(../../assets/images/banner_summit_en.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 37vw;
+  background-color: #004395;
+}
+.red {
+  color: #cf122e;
+}
+.fs-small {
+  font-size: 13px;
+}
+.bg-gray {
+  background-color: #e7e4e4;
+}
+.button-cta {
+  background-color: #cf122e;
+  color: white;
+  border: none;
+  padding: 0 2vw 0 2vw;
+}
+.bg-footer {
+  background-color: #e7e4e4;
+}
+footer {
+  border-top: 3px solid #cf122e;
+}
+footer img {
+  max-width: 120px;
+}
+.bg-login {
+  background-color: #aebcd7;
+}
+.bg-blue {
+  background-color: #004395;
+  margin-top: -1vh;
+}
+.bg-register {
+  background-color: #e7e4e4;;
+  
+}
+.btn-jacket {
+  background-color: white;
+  font-size: 25px;
+  padding: 0 20px 0 20px;
+  margin: 0 20px;
+}
+.margin-summit {
+  margin: 0 100px;
+}
+.padding-summit {
+  padding: 0 100px;
+}
+.margin-who {
+  margin: 0 50px;
+}
+@media only screen and (max-width: 600px) {
+  nav {
+    display: block !important;
+  }
+  .bg-gray h2 {
+    margin-top: 1vh;
+  }
+  #hotel {
+    text-align: right;
+    padding-right: 4vh;
+  }
+  .pe-5 {
+    padding-right: 1rem !important;
+  }
+  .btn-jacket {
+    padding: 0 10px ;
+    margin: 0 5px;
+    font-size: 9px;
+  }
+  .margin-summit {
+    margin: 0;
+  }
+  .padding-summit {
+    padding: 0;
+  }
+  .margin-who {
+    margin: 0;
+  }
+}
