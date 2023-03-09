@@ -1,4 +1,4 @@
-# RicohSummit2023
+# Ricoh Summit 2023
 https://itm-channel-marketing.github.io/RicohSummit2023/
 
 HTML<br />
