@@ -1,0 +1,154 @@
+@font-face{
+  font-family: 'Frutiger-normal';
+  src: url(../../assets/fonts/FrutigerLT57Condensed.ttf);
+} 
+@font-face{
+  font-family: 'Frutiger-bold';
+  src: url(../../assets/fonts/FrutigerLT65Bold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Frutiger-normal', Arial, Helvetica, sans-serif;
+  color: #717171;
+  font-size: 1.5vw;
+}
+h1 {
+  font-family: 'Frutiger-bold', Arial, Helvetica, sans-serif;
+}
+.bg-banner {
+  background-image: url(../../assets/images/banner_RICOH-SUMMIT-23_colores_EN.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #004395;
+}
+
+.red {
+  color: #cf122e;
+}
+.white {
+  color: #fff;
+}
+.fs-small {
+  font-size: 13px;
+}
+.fs-medium {
+  font-size: 16px;
+}
+.bg-gray {
+  background-color: #e7e4e4;
+}
+.button-cta {
+  background-color: #cf122e;
+  color: white;
+  border: none;
+  padding: 0 2vw 0 2vw;
+}
+.button-back {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 0 2vw 0 2vw;
+}
+.bg-footer {
+  background-color: #e7e4e4;
+}
+footer {
+  border-top: 3px solid #cf122e;
+}
+footer img {
+  max-width: 100px;
+}
+.bg-login {
+  background-color: #aebcd7;
+}
+.bg-blue {
+  background-color: #004395;
+}
+.bg-register {
+  background-color: #e7e4e4;;
+  
+}
+.btn-jacket {
+  background-color: white;
+  font-size: 25px;
+  padding: 0 20px 0 20px;
+  margin: 0 16px;
+}
+.margin-summit {
+  margin: 0;
+}
+.padding-summit {
+  padding: 0 100px;
+}
+.margin-who {
+  margin: 0 50px;
+}
+.flags {
+  max-width: 1em;
+}
+.flag-p {
+  position: relative;
+  left: 7vh;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-15 {
+  font-size: 15px;
+}
+.ricoh-strategic {
+  margin-left: 10vh;
+}
+@media only screen and (max-width: 600px) {
+  nav {
+    display: block !important;
+  }
+  .bg-gray h2 {
+    margin-top: 1vh;
+  }
+  #hotel {
+    text-align: right;
+    padding-right: 4vh;
+  }
+  .pe-5 {
+    padding-right: 1rem !important;
+  }
+  .btn-jacket {
+    padding: 0 10px ;
+    margin: 0 5px;
+    font-size: 9px;
+  }
+  .margin-summit {
+    margin: 0;
+  }
+  .padding-summit {
+    padding: 0;
+  }
+  .margin-who {
+    margin: 0;
+  }
+  .flag-p {
+    left: 0vh;
+  }
+  .flags {
+    max-width: 4em;
+  }
+  .ricoh-strategic {
+    margin-left: 6vh;
+  }
+}
+@media only screen and (max-width: 1390px) {
+  .bg-banner {
+    min-height: 28vw;
+  }
+}
+@media only screen and (min-width: 1391px) {
+  .flag-p {
+    left: 4vw;
+  }
+}
