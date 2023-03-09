@@ -2,7 +2,7 @@
 https://itm-channel-marketing.github.io/RicohSummit2023/
 
 HTML
-https://itm-channel-marketing.github.io/RicohSummit2023/html/index
-https://itm-channel-marketing.github.io/RicohSummit2023/html/login
-https://itm-channel-marketing.github.io/RicohSummit2023/html/registration-confirm
+https://itm-channel-marketing.github.io/RicohSummit2023/html/index<br />
+https://itm-channel-marketing.github.io/RicohSummit2023/html/login<br />
+https://itm-channel-marketing.github.io/RicohSummit2023/html/registration-confirm<br />
 https://itm-channel-marketing.github.io/RicohSummit2023/html/registration
