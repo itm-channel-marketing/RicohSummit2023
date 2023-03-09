@@ -1,3 +1,18 @@
+<?php
+session_start();
+
+if ( (!isset($_SESSION['refererLoginAdm']) && !isset($_SESSION['emailAdm'])) || $_SESSION['refererLoginAdm'] == false) {
+    $_SESSION['erro'] = "Page is invalid";
+    header('Location: login.php');
+    exit;
+}
+
+unset($_SESSION['refererLoginAdm']);
+
+$_SESSION['refererPostLoginAdm'] = true;
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +26,7 @@
   <title>Ricoh RLA Summit</title>
 </head>
 
-<body class="bg-blue">
+<body>
   <main class="bg-banner">
       <section class="pt-3">
         <div class="container-fluid">
@@ -33,14 +48,23 @@
     <section class="py-4">
       <div class="container-fluid">
         <div class="row justify-content-center">
-          <div class="col-lg-12 d-flex align-items-center justify-content-start my-4 w-100">
+          <div class="col-lg-12 my-4">
             <div>
-              <form action="">
+              <form action="post-login-admin.php" method="POST">
+                
                 <div class="row text-center d-flex align-items-center">
-                  <div class="d-sm-flex justify-content-start mx-5">
-                    <input type="password" class="form-control align-self-center" id="inputPassword" placeholder="email">
-                    <div class="d-lg-none d-flex pt-4"></div>
-                    <button class="fs-5 button-cta ms-3 align-self-center ">Login</button>
+                  <div class="col-12 col-md-6 d-flex justify-content-start px-5">
+                    <input name="password" type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                    <button class="fs-5 button-cta px-5 ms-3">Login</button>
+                  </div>
+		  <div class="col-12 col-md-6 d-flex justify-content-start px-5">
+                    <?php
+	                if (isset($_SESSION['erro']) && $_SESSION['erro'] != "") {
+	                  $mensagem = $_SESSION['erro'];
+	                  unset($_SESSION['erro']);
+	                  echo '<div class="mb-3 row"><p class="text-center" style="color:white; font-size: 16pt;">' . $mensagem . '</p>' . '</div>';
+	                }
+	             ?>
                   </div>
                 </div>
               </form>
